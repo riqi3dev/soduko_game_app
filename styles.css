@@ -1,0 +1,24 @@
+.wrapper{   
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border:  2px solid black;
+}
+
+.grid-container{ 
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  border:  1px solid black;
+}
+
+.grid-item{
+    border:  1px solid black;
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    color: black;
+    background-color: rgb(133, 255, 218);
+}
