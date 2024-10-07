@@ -1,11 +1,13 @@
+
+
 $(document).ready(function () {
   let gridContainer = $(".grid-container"); 
   let gridItem = $(".grid-container > .grid-item");
   let itemValue = $(".grid-container > .grid-item > h2");
-  let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink', 'maroon'];
+  // let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink', 'maroon'];
 
   let randNum = Math.floor(Math.random() * 9) + 1;
-  gridItem.css('background-color', colors[randNum]);
+  // gridItem.css('background-color', colors[randNum]);
   itemValue.html(randNum);
 
   // clones the .grid-container by 9 times
@@ -19,7 +21,7 @@ $(document).ready(function () {
     let cloneItems = clone.find('.grid-item');
     let newRandNum = Math.floor(Math.random() * 9) + 1;
 
-    cloneItems.css('background-color', colors[newRandNum]);
+    // cloneItems.css('background-color', colors[newRandNum]);
     cloneItems.find('h2').html(newRandNum);
 
     clone.insertBefore(gridContainer); 
@@ -33,8 +35,8 @@ $(".grid-container > .grid-item").on("click", function () {
 });
 
 
+// create timer
 let start = new Date;
-
 setInterval(function() {
     let elapsedTime = Math.floor((new Date() - start) / 1000);  
     let minutes = Math.floor(elapsedTime / 60);  

@@ -1,14 +1,21 @@
+:root{
+  --grey: #d1d1d1;
+  --black: #000;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   height: 100%;
-  /* background-color: #001327; */
 }
 
-h2 {
+h1 {
   margin: 0;
-  font-family: "Bebas Neue", sans-serif;
+  font-size: xx-large;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100; 
 }
 
 p {
@@ -16,50 +23,51 @@ p {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
 }
 
 .wrapper {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sudoku-wrapper { 
-    width: fit-content;
+.sudoku-wrapper {
+  width: fit-content;
   display: grid;
   grid-template-columns: auto auto auto;
-  border: 2px solid #ffcc70;
+  border: 2px solid var(--black);
 }
 
 .grid-container {
-    width: fit-content;
+  width: fit-content;
   display: grid;
+  grid-gap: 1px;
+  background-color: var(--grey);
   grid-template-columns: auto auto auto;
-  border: 1px solid #ffcc70;
+  border: 1px solid var(--black);
 }
 
-.grid-item {
-  border: 1px solid #ffcc70;
+.grid-item { 
   padding: 1rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   text-align: center;
   align-content: center;
-  color: white;
-  background-color: #22668d;
+  color: black;
+  background-color: white;
 }
 
 .mistake,
 .content-wrapper {
   display: flex;
 }
- 
+
 .content-wrapper {
   justify-content: space-between;
 }
